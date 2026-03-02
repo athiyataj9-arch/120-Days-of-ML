@@ -1,58 +1,85 @@
 # 120 Days of Machine Learning: From Foundations to MLOps 🚀
 
-A comprehensive, 6-phase journey mastering the Machine Learning lifecycle. This repository documents my daily progress from mathematical foundations (Linear Algebra/Calculus) and core algorithms (Regression/SVM/XGBoost) to Deep Learning and production-grade deployment (Docker/FastAPI).
+This repository documents my 6-phase journey mastering the end-to-end Machine Learning lifecycle—from mathematical first principles and "from-scratch" algorithms to production-grade deployment.
 
-Includes "from-scratch" implementations, end-to-end projects, and MLOps best practices.
+## 🗺️ The Roadmap
 
-## 🗺️ The 120-Day Roadmap
-Phase Focus Duration Status 
-Phase 1 Foundations (Math & Preprocessing)Days 1–20🏗️ Active
-Phase 2 Supervised Learning (Regression/Trees)Days 21–50⏳ Pending
-Phase 3 Unsupervised Learning (Clustering/PCA)Days 51–65⏳ Pending
-Phase 4 Deep Learning (PyTorch/CNN/NLP)Days 66–85⏳ Pending 
-Phase 5 MLOps (FastAPI, Docker, CI/CD)Days 86–100⏳ Pending 
-Phase 6 Interview Prep & System DesignDays 101–120⏳ Pending
+| Phase | Focus | Status |
+| :--- | :--- | :--- |
+| **01** | **Foundations (Math & Preprocessing)** | 🏗️ In Progress |
+| **02** | **Supervised Learning (Regression/Trees)** | ⏳ Pending |
+| **03** | **Unsupervised Learning (Clustering/PCA)** | ⏳ Pending |
+| **04** | **Deep Learning (PyTorch/CNN/NLP)** | ⏳ Pending |
+| **05** | **MLOps & Deployment (FastAPI/Docker)** | ⏳ Pending |
+| **06** | **Interview Prep & System Design** | ⏳ Pending |
 
-## 📂 Repository Structure
-Plaintext
-├── 01_Foundations/         # Math, NumPy, Pandas, Preprocessing
-│   ├── 01_NumPy/           # Day 1-2: Array manipulation & Vectorization
-│   └── 02_Pandas/          # Day 3-4: Data Wrangling & Cleaning
-├── 02_Supervised/          # Regression, Classification, Boosting
-├── 03_Unsupervised/        # Clustering, Dimensionality Reduction
-├── 04_DeepLearning/        # Neural Networks, CNN, Transformers
-├── 05_MLOps/               # FastAPI, Docker, Cloud Deployment
-└── 06_Interview_Prep/      # Scratch Implementations & Theory
+---
 
 ## 📈 Daily Progress Log
-### Phase 1: Foundations 🟢
-- Day 01: NumPy Mastery
-    - Topics: Vectorization, Broadcasting, and Reshaping.
-    - Insight: Learned why NumPy is significantly faster than Python lists by utilizing C-based contiguous memory.
-- Day 02: Pandas & Data Cleaning
-    - Topics: DataFrame manipulation, Handling Nulls (fillna), and Outlier Detection.
-    - Insight: Mastered .loc vs .iloc and realized that data cleaning is where 80% of an ML Engineer's time is spent.
-- Day 03: Data Visualization (Upcoming)
-    - Goal: Exploratory Data Analysis (EDA) using Matplotlib and Seaborn.
-    
-## 🛠️ Tech Stack & Setup
-- Language: Python 3.10+
-- Libraries: NumPy, Pandas, Matplotlib, Seaborn, Scikit-Learn
-- Tools: VS Code, Jupyter Notebooks, Git
 
-## ⚙️ Local Environment Setup
-1. Clone the repo:
-Bash
-git clone https://github.com/YOUR_USERNAME/120-days-of-ml.git
+### 📂 Phase 1: Foundations (Days 1–20)
 
-2. Create Virtual Environment:
-Bash
-python -m venv ml_env
-ml_env\Scripts\activate
+**Day 01: NumPy Mastery**
+* **Concepts:** Vectorization, Broadcasting, and Array Reshaping.
+* **Reflection:** NumPy is the engine of ML. Realized that matrix operations are significantly faster than standard Python loops because of C-extensions.
 
-3. Install Dependencies:
-Bash
-pip install -r requirements.txt
+**Day 02: Pandas & Data Wrangling**
+* **Concepts:** DataFrames, Missing Value Imputation (`fillna`), and Outlier Detection.
+* **Reflection:** Data cleaning is where 80% of an ML Engineer's time is spent. Mastered `.loc` vs `.iloc` for precise data selection.
 
-## 📝 About the Journey
-This repository follows the "First Principles" approach: understanding the math before using the library. My goal is to transition from a Python learner to a production-ready Machine Learning Engineer.
+**Day 03: Exploratory Data Analysis (EDA)**
+* **Concepts:** [Current Task]
+* **Reflection:** [Awaiting your input!]
+
+---
+
+## 🏗️ Phase Breakdown
+
+### 🟢 Phase 1: Foundations (Days 1–20)
+Focus on the "Why" behind the "How." 
+* **Math:** Linear Algebra (Dot products, Transpose), Calculus (Gradient Descent), and Probability.
+* **Tools:** Advanced NumPy, Pandas, Matplotlib, and Seaborn.
+* **Goal:** Build a robust data preprocessing pipeline.
+
+### 🟡 Phase 2: Supervised Learning (Days 21–50)
+* **Algorithms:** Linear/Logistic Regression, SVMs, Decision Trees, and Random Forests.
+* **Mastery:** Implementing "from-scratch" versions of Gradient Descent.
+* **Ensembles:** Diving into XGBoost, LightGBM, and CatBoost.
+
+### 🔵 Phase 3: Unsupervised Learning (Days 51–65)
+* **Concepts:** K-Means, Hierarchical Clustering, and DBSCAN.
+* **Dimensionality:** PCA (Principal Component Analysis) and t-SNE for visualizing high-dimensional data.
+
+### 🟣 Phase 4: Deep Learning (Days 66–85)
+* **Frameworks:** PyTorch / TensorFlow.
+* **Architectures:** Multi-Layer Perceptrons (MLP), CNNs for Vision, and RNNs/LSTMs for Time-Series/NLP.
+
+### 🔴 Phase 5: MLOps & Production (Days 86–100)
+* **Deployment:** Building APIs with **FastAPI**.
+* **Containerization:** Packaging models with **Docker**.
+* **Cloud:** Deploying to AWS/GCP and setting up basic monitoring.
+
+### 🟤 Phase 6: Interview Prep (Days 101–120)
+* **Theory:** Bias-Variance Tradeoff, Regularization ($L1/L2$), and Metric selection.
+* **System Design:** Designing large-scale ML systems (Recommendation engines, Ranking systems).
+
+---
+
+## 🛠️ Tech Stack
+
+* **Languages:** Python 3.10+
+* **Core Libraries:** NumPy, Pandas, Scikit-Learn, SciPy
+* **Deep Learning:** PyTorch / TensorFlow
+* **Visualization:** Matplotlib, Seaborn, Plotly
+* **MLOps:** FastAPI, Docker, Git, DVC (Data Version Control)
+
+---
+
+## 🏅 Milestones
+
+* [ ] Phase 1: Foundation Certified
+* [ ] Phase 2: Supervised Mastery
+* [ ] Phase 3: Unsupervised Expert
+* [ ] Phase 4: Deep Learning Practitioner
+* [ ] Phase 5: MLOps Engineer
+* [ ] Phase 6: Interview Ready
