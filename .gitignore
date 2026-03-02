@@ -1,0 +1,16 @@
+# Ignore Virtual Environments
+ml_env/
+venv/
+
+# Ignore Python Cache
+__pycache__/
+*.pyc
+
+# Ignore Large Data files
+data/
+*.csv
+*.zip
+*.json
+
+# Ignore OS files
+.DS_Store
