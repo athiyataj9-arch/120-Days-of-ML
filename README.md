@@ -56,30 +56,27 @@ This repository documents my 120-day journey from Python data science foundation
 ├── data/                   # Raw & Processed Datasets
 └── requirements.txt        # Dependencies
 
+
 ## 🛠️ Tech Stack
 * **Language:** Python 3.10+
 * **Libraries:** NumPy, Pandas, Matplotlib, Seaborn, Scipy
 * **Environment:** VS Code, Jupyter Notebooks, Git
 
----
-
 ## ⚙️ Setup Instructions
-
+```
 ### 1. Activate Virtual Environment
 Depending on your operating system, run the following in your terminal:
-
+```
 **Windows:**
 ```bash
 ml_env\Scripts\activate
-
+```
 ### 2. Mac/Linux Activation
 If you are on a Unix-based system, use the following command:
 ```bash
 source ml_env/bin/activate
-
+```
 ### 3. Install Dependencies
 Ensure you have the latest versions of the required libraries by running:
 ```bash
 pip install -r requirements.txt
-
----
