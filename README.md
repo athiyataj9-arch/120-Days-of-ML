@@ -22,56 +22,72 @@ This repository documents my 120-day journey from Python data science foundation
 **Day 01: NumPy Essentials**
 * **File:** `01_Foundations/day01_numpy.ipynb`
 * **Concepts:** Array Shaping, Vectorization, and Axis-based Aggregation.
-* **Reflection:** NumPy is the backbone of ML performance. Mastered how to manipulate data dimensions without slow Python loops.
+* **Reflection:** NumPy is the backbone of ML performance.
 
 **Day 02: Pandas & Data Wrangling**
 * **File:** `01_Foundations/day02_pandas.ipynb`
-* **Concepts:** Duplicate removal, Outlier handling with `.mask()`, and Mean Imputation.
-* **Reflection:** Learned that data cleaning is iterative. Using `.fillna()` and `.drop_duplicates()` is essential for model reliability.
+* **Concepts:** Duplicate removal, Outlier handling, and Mean Imputation.
+* **Reflection:** Data cleaning is iterative and essential for model reliability.
 
 **Day 03: Exploratory Data Analysis (EDA)**
 * **File:** `01_Foundations/day03_visualization.ipynb`
 * **Concepts:** Distribution plots (Histograms), KDE, and Correlation Heatmaps.
-* **Reflection:** Visualization reveals what raw numbers hide. Heatmaps are crucial for identifying feature redundancy.
+* **Reflection:** Visualization reveals what raw numbers hide.
 
 **Day 04: Statistics for Machine Learning**
 * **File:** `01_Foundations/day04_statistics.ipynb`
-* **Concepts:** Central Tendency (Mean/Median), Standard Deviation, and Z-Scores.
-* **Reflection:** Understood how Z-scores help identify outliers mathematically rather than just visually.
+* **Concepts:** Central Tendency, Standard Deviation, and Z-Scores.
+* **Reflection:** Understood how Z-scores help identify outliers mathematically.
 
 **Day 05: Linear Algebra Essentials**
-* File: `01_Foundations/day05_linear_algebra.ipynb`
-* Concepts: Dot Products and Matrix Multiplication.
+* **File:** `01_Foundations/day05_linear_algebra.ipynb`
+* **Concepts:** Dot Products and Matrix Multiplication.
+* **Reflection:** Realized that Neural Networks are essentially series of matrix multiplications.
 
 **Day 06: Calculus & Optimization**
-* File: `01_Foundations/day06_math_for_ml.ipynb`
-* Concepts: Derivatives and Gradient Descent.
+* **File:** `01_Foundations/day06_math_for_ml.ipynb`
+* **Concepts:** Derivatives and Gradient Descent logic.
+* **Reflection:** Understanding how gradients guide models to the lowest error.
 
-**Day 07: SQL for Data Science**
-* File: `01_Foundations/day07_sql_for_ds.ipynb`
-* Concepts: Joins and Aggregations.
+**Day 07: SQL for Data Science (Pandas Joins)**
+* **File:** `01_Foundations/day07_sql_for_ds.ipynb`
+* **Concepts:** Inner/Left Joins and Complex Aggregations.
+* **Reflection:** Merging datasets correctly is vital for building complete feature sets.
 
 **Day 08: Feature Engineering**
-* File: `01_Foundations/day08_feature_engineering.ipynb`
-* Concepts: Scaling and Encoding.
+* **File:** `01_Foundations/day08_feature_engineering.ipynb`
+* **Concepts:** Standard Scaling and One-Hot Encoding.
+* **Reflection:** Scaling prevents large-range features from dominating the model.
 
 **Day 09: Time Series Analysis**
-* File: `01_Foundations/day09_timeseries.ipynb`
-* Concepts: Resampling and Rolling Windows.
+* **File:** `01_Foundations/day09_timeseries.ipynb`
+* **Concepts:** DateTime Indexing, `.resample()`, and Rolling Windows.
+* **Reflection:** Learned to smooth out noisy data and extract trends using moving averages.
 
-**Day 10: Pivot Tables**
-* File: `01_Foundations/day10_pivot_tables.ipynb`
-* Concepts: Advanced Grouping and Reporting.
+**Day 10: Pivot Tables & Advanced Aggregation**
+* **File:** `01_Foundations/day10_pivot_tables.ipynb`
+* **Concepts:** `.pivot_table()` and `.groupby().agg()`.
+* **Reflection:** Mastered data summarization for high-level decision making.
+
+**Day 11: Matrix Inversion**
+* **File:** `01_Foundations/day11_matrix_inversion.ipynb`
+* **Concepts:** Determinants and Inverse Matrices ($A^{-1}$).
+* **Reflection:** Learned how to "undo" matrix transformations to solve systems of linear equations.
+
+**Day 12: High-Dimensional Tensors**
+* **File:** `01_Foundations/day12_tensors.ipynb`
+* **Concepts:** 3D Tensors, Shape manipulation, and Reshaping.
+* **Reflection:** Tensors are the multi-dimensional containers for all Deep Learning data. Mastering `.reshape()` is key to data prep.
 
 ---
 
 ## 📂 Repository Structure
 ```text
 ├── 01_Foundations/         # Math, Stats, NumPy, Pandas
-│   ├── day01_numpy.ipynb   # Day 1: Array manipulation
-│   ├── day02_pandas.ipynb  # Day 2: Data cleaning
-│   ├── day03_visualization.ipynb # Day 3: EDA
-│   └── day04_statistics.ipynb    # Day 4: Stats
+│   ├── day01_numpy.ipynb
+│   ├── ...
+│   ├── day11_matrix_inversion.ipynb
+│   └── day12_tensors.ipynb
 ├── 02_Supervised/          # Regression, Classification, Boosting
 ├── 03_Unsupervised/        # Clustering, Dimensionality Reduction
 ├── 04_DeepLearning/        # Neural Networks, CNN, Transformers
