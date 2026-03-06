@@ -39,6 +39,30 @@ This repository documents my 120-day journey from Python data science foundation
 * **Concepts:** Central Tendency (Mean/Median), Standard Deviation, and Z-Scores.
 * **Reflection:** Understood how Z-scores help identify outliers mathematically rather than just visually.
 
+**Day 05: Linear Algebra Essentials**
+* File: `01_Foundations/day05_linear_algebra.ipynb`
+* Concepts: Dot Products and Matrix Multiplication.
+
+**Day 06: Calculus & Optimization**
+* File: `01_Foundations/day06_math_for_ml.ipynb`
+* Concepts: Derivatives and Gradient Descent.
+
+**Day 07: SQL for Data Science**
+* File: `01_Foundations/day07_sql_for_ds.ipynb`
+* Concepts: Joins and Aggregations.
+
+**Day 08: Feature Engineering**
+* File: `01_Foundations/day08_feature_engineering.ipynb`
+* Concepts: Scaling and Encoding.
+
+**Day 09: Time Series Analysis**
+* File: `01_Foundations/day09_timeseries.ipynb`
+* Concepts: Resampling and Rolling Windows.
+
+**Day 10: Pivot Tables**
+* File: `01_Foundations/day10_pivot_tables.ipynb`
+* Concepts: Advanced Grouping and Reporting.
+
 ---
 
 ## 📂 Repository Structure
