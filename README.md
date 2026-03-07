@@ -79,6 +79,16 @@ This repository documents my 120-day journey from Python data science foundation
 * **Concepts:** 3D Tensors, Shape manipulation, and Reshaping.
 * **Reflection:** Tensors are the multi-dimensional containers for all Deep Learning data. Mastering `.reshape()` is key to data prep.
 
+**Day 13: Probability & Normal Distribution**
+* **File:** `01_Foundations/day13_probability.ipynb`
+* **Concepts:** Normal Distribution (Bell Curve), Mean, Standard Deviation, and Z-Scores.
+* **Reflection:** Understood how the Gaussian distribution acts as the "default" assumption for many ML models and how to identify outliers using Z-scores.
+
+**Day 14: Hypothesis Testing**
+* **File:** `01_Foundations/day14_hypothesis_testing.ipynb`
+* **Concepts:** Null vs. Alternative Hypothesis, T-Tests, and P-Values.
+* **Reflection:** Learned how to mathematically validate if a model improvement is statistically significant or just random noise—crucial for A/B testing features.
+
 ---
 
 ## 📂 Repository Structure
