@@ -101,6 +101,9 @@ This repository documents my 120-day journey from Python data science foundation
 
 ---
 
+## 📂 Repository Structure
+
+```text
 ├── 01_Foundations/             # Phase 1: Math, Stats, & Preprocessing
 │   ├── day01_numpy.ipynb
 │   ├── ...
@@ -110,11 +113,11 @@ This repository documents my 120-day journey from Python data science foundation
 │   ├── day14_hypothesis_testing.ipynb
 │   ├── day15_sampling.ipynb
 │   └── day16_imbalanced_data.ipynb
-├── 02_Supervised/              # Regression, Classification, Boosting
-├── 03_Unsupervised/            # Clustering, Dimensionality Reduction
-├── 04_DeepLearning/            # Neural Networks, CNN, Transformers
-├── 05_MLOps/                   # FastAPI, Docker, Cloud Deployment
-├── 06_Interview_Prep/          # Scratch Implementations & Theory
+├── 02_Supervised/              # Phase 2: Regression, Classification, Boosting
+├── 03_Unsupervised/            # Phase 3: Clustering, Dimensionality Reduction
+├── 04_DeepLearning/            # Phase 4: Neural Networks, CNN, Transformers
+├── 05_MLOps/                   # Phase 5: FastAPI, Docker, Cloud Deployment
+├── 06_Interview_Prep/          # Phase 6: Scratch Implementations & Theory
 ├── data/                       # Raw & Processed Datasets
 ├── .gitignore                  # Keeps your repo clean (ignores ml_env/)
 └── requirements.txt            # Dependencies (numpy, pandas, sklearn, imblearn)
