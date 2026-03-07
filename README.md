@@ -89,22 +89,35 @@ This repository documents my 120-day journey from Python data science foundation
 * **Concepts:** Null vs. Alternative Hypothesis, T-Tests, and P-Values.
 * **Reflection:** Learned how to mathematically validate if a model improvement is statistically significant or just random noise—crucial for A/B testing features.
 
+**Day 15: Sampling Techniques**
+* **File:** `01_Foundations/day15_sampling.ipynb`
+* **Concepts:** Train-Test Split and Stratified Sampling.
+* **Reflection:** Learned how to properly partition data to ensure the model generalizes well. Stratification is key for maintaining class balance.
+
+**Day 16: Handling Imbalanced Data**
+* **File:** `01_Foundations/day16_imbalanced_data.ipynb`
+* **Concepts:** Random Over-sampling and SMOTE (Synthetic Minority Over-sampling Technique).
+* **Reflection:** Mastered techniques to fix "biased" datasets. SMOTE is powerful because it creates synthetic data points rather than just duplicating existing ones.
+
 ---
 
-## 📂 Repository Structure
-```text
-├── 01_Foundations/         # Math, Stats, NumPy, Pandas
+├── 01_Foundations/             # Phase 1: Math, Stats, & Preprocessing
 │   ├── day01_numpy.ipynb
 │   ├── ...
 │   ├── day11_matrix_inversion.ipynb
-│   └── day12_tensors.ipynb
-├── 02_Supervised/          # Regression, Classification, Boosting
-├── 03_Unsupervised/        # Clustering, Dimensionality Reduction
-├── 04_DeepLearning/        # Neural Networks, CNN, Transformers
-├── 05_MLOps/               # FastAPI, Docker, Cloud Deployment
-├── 06_Interview_Prep/      # Scratch Implementations & Theory
-├── data/                   # Raw & Processed Datasets
-└── requirements.txt        # Dependencies
+│   ├── day12_tensors.ipynb
+│   ├── day13_probability.ipynb
+│   ├── day14_hypothesis_testing.ipynb
+│   ├── day15_sampling.ipynb
+│   └── day16_imbalanced_data.ipynb
+├── 02_Supervised/              # Regression, Classification, Boosting
+├── 03_Unsupervised/            # Clustering, Dimensionality Reduction
+├── 04_DeepLearning/            # Neural Networks, CNN, Transformers
+├── 05_MLOps/                   # FastAPI, Docker, Cloud Deployment
+├── 06_Interview_Prep/          # Scratch Implementations & Theory
+├── data/                       # Raw & Processed Datasets
+├── .gitignore                  # Keeps your repo clean (ignores ml_env/)
+└── requirements.txt            # Dependencies (numpy, pandas, sklearn, imblearn)
 
 
 ## 🛠️ Tech Stack
