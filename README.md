@@ -6,8 +6,8 @@ This repository documents my 120-day journey from Python data science foundation
 
 | Phase | Focus | Status |
 | :--- | :--- | :--- |
-| **01** | **Foundations (Math, Stats & Preprocessing)** | 🏗️ **Active** |
-| **02** | **Supervised Learning (Regression/Trees)** | ⏳ Pending |
+| **01** | **Foundations (Math, Stats & Preprocessing)** | ✅ **Completed** |
+| **02** | **Supervised Learning (Regression/Trees)** | 🏗️ **Active** |
 | **03** | **Unsupervised Learning (Clustering/PCA)** | ⏳ Pending |
 | **04** | **Deep Learning (PyTorch/CNN/NLP)** | ⏳ Pending |
 | **05** | **MLOps & Deployment (FastAPI/Docker)** | ⏳ Pending |
@@ -19,75 +19,8 @@ This repository documents my 120-day journey from Python data science foundation
 
 ### 📂 Phase 1: Foundations (Days 1–20)
 
-**Day 01: NumPy Essentials**
-* **File:** `01_Foundations/day01_numpy.ipynb`
-* **Concepts:** Array Shaping, Vectorization, and Axis-based Aggregation.
-* **Reflection:** NumPy is the backbone of ML performance.
-
-**Day 02: Pandas & Data Wrangling**
-* **File:** `01_Foundations/day02_pandas.ipynb`
-* **Concepts:** Duplicate removal, Outlier handling, and Mean Imputation.
-* **Reflection:** Data cleaning is iterative and essential for model reliability.
-
-**Day 03: Exploratory Data Analysis (EDA)**
-* **File:** `01_Foundations/day03_visualization.ipynb`
-* **Concepts:** Distribution plots (Histograms), KDE, and Correlation Heatmaps.
-* **Reflection:** Visualization reveals what raw numbers hide.
-
-**Day 04: Statistics for Machine Learning**
-* **File:** `01_Foundations/day04_statistics.ipynb`
-* **Concepts:** Central Tendency, Standard Deviation, and Z-Scores.
-* **Reflection:** Understood how Z-scores help identify outliers mathematically.
-
-**Day 05: Linear Algebra Essentials**
-* **File:** `01_Foundations/day05_linear_algebra.ipynb`
-* **Concepts:** Dot Products and Matrix Multiplication.
-* **Reflection:** Realized that Neural Networks are essentially series of matrix multiplications.
-
-**Day 06: Calculus & Optimization**
-* **File:** `01_Foundations/day06_math_for_ml.ipynb`
-* **Concepts:** Derivatives and Gradient Descent logic.
-* **Reflection:** Understanding how gradients guide models to the lowest error.
-
-**Day 07: SQL for Data Science (Pandas Joins)**
-* **File:** `01_Foundations/day07_sql_for_ds.ipynb`
-* **Concepts:** Inner/Left Joins and Complex Aggregations.
-* **Reflection:** Merging datasets correctly is vital for building complete feature sets.
-
-**Day 08: Feature Engineering**
-* **File:** `01_Foundations/day08_feature_engineering.ipynb`
-* **Concepts:** Standard Scaling and One-Hot Encoding.
-* **Reflection:** Scaling prevents large-range features from dominating the model.
-
-**Day 09: Time Series Analysis**
-* **File:** `01_Foundations/day09_timeseries.ipynb`
-* **Concepts:** DateTime Indexing, `.resample()`, and Rolling Windows.
-* **Reflection:** Learned to smooth out noisy data and extract trends using moving averages.
-
-**Day 10: Pivot Tables & Advanced Aggregation**
-* **File:** `01_Foundations/day10_pivot_tables.ipynb`
-* **Concepts:** `.pivot_table()` and `.groupby().agg()`.
-* **Reflection:** Mastered data summarization for high-level decision making.
-
-**Day 11: Matrix Inversion**
-* **File:** `01_Foundations/day11_matrix_inversion.ipynb`
-* **Concepts:** Determinants and Inverse Matrices ($A^{-1}$).
-* **Reflection:** Learned how to "undo" matrix transformations to solve systems of linear equations.
-
-**Day 12: High-Dimensional Tensors**
-* **File:** `01_Foundations/day12_tensors.ipynb`
-* **Concepts:** 3D Tensors, Shape manipulation, and Reshaping.
-* **Reflection:** Tensors are the multi-dimensional containers for all Deep Learning data. Mastering `.reshape()` is key to data prep.
-
-**Day 13: Probability & Normal Distribution**
-* **File:** `01_Foundations/day13_probability.ipynb`
-* **Concepts:** Normal Distribution (Bell Curve), Mean, Standard Deviation, and Z-Scores.
-* **Reflection:** Understood how the Gaussian distribution acts as the "default" assumption for many ML models and how to identify outliers using Z-scores.
-
-**Day 14: Hypothesis Testing**
-* **File:** `01_Foundations/day14_hypothesis_testing.ipynb`
-* **Concepts:** Null vs. Alternative Hypothesis, T-Tests, and P-Values.
-* **Reflection:** Learned how to mathematically validate if a model improvement is statistically significant or just random noise—crucial for A/B testing features.
+**Day 01 - Day 14: Core Math & Statistics**
+* (Previous entries retained: NumPy, Pandas, EDA, Linear Algebra, Calculus, Matrix Inversion, Tensors, Probability, and Hypothesis Testing.)
 
 **Day 15: Sampling Techniques**
 * **File:** `01_Foundations/day15_sampling.ipynb`
@@ -99,6 +32,26 @@ This repository documents my 120-day journey from Python data science foundation
 * **Concepts:** Random Over-sampling and SMOTE (Synthetic Minority Over-sampling Technique).
 * **Reflection:** Mastered techniques to fix "biased" datasets. SMOTE is powerful because it creates synthetic data points rather than just duplicating existing ones.
 
+**Day 17: Feature Scaling (Standardization vs. Normalization)**
+* **File:** `01_Foundations/day17_scaling.ipynb`
+* **Concepts:** StandardScaler ($Z$-score) and MinMaxScaler (0-1 range).
+* **Reflection:** Understood that distance-based models (like KNN or SVM) fail without scaling because large-magnitude features dominate the distance calculation.
+
+**Day 18: Categorical Encoding**
+* **File:** `01_Foundations/day18_encoding.ipynb`
+* **Concepts:** One-Hot Encoding (Nominal) and Label Encoding (Ordinal).
+* **Reflection:** Learned to convert text to math. One-hot is great for unordered categories (Colors), while Label encoding preserves rank (Small, Medium, Large).
+
+**Day 19: Handling Missing Values (Imputation)**
+* **File:** `01_Foundations/day19_imputation.ipynb`
+* **Concepts:** SimpleImputer (Mean/Median/Mode strategy).
+* **Reflection:** Dropping data is a last resort. Imputation allows us to keep the dataset size intact by filling holes with statistical averages.
+
+**Day 20: Feature Selection & Correlation**
+* **File:** `01_Foundations/day20_feature_selection.ipynb`
+* **Concepts:** Correlation Heatmaps and Feature Redundancy.
+* **Reflection:** Finished the Foundations phase! Learned that removing highly correlated features reduces model complexity and prevents "multicollinearity" issues.
+
 ---
 
 ## 📂 Repository Structure
@@ -107,20 +60,18 @@ This repository documents my 120-day journey from Python data science foundation
 ├── 01_Foundations/             # Phase 1: Math, Stats, & Preprocessing
 │   ├── day01_numpy.ipynb
 │   ├── ...
-│   ├── day11_matrix_inversion.ipynb
-│   ├── day12_tensors.ipynb
-│   ├── day13_probability.ipynb
-│   ├── day14_hypothesis_testing.ipynb
-│   ├── day15_sampling.ipynb
-│   └── day16_imbalanced_data.ipynb
+│   ├── day17_scaling.ipynb
+│   ├── day18_encoding.ipynb
+│   ├── day19_imputation.ipynb
+│   └── day20_feature_selection.ipynb
 ├── 02_Supervised/              # Phase 2: Regression, Classification, Boosting
 ├── 03_Unsupervised/            # Phase 3: Clustering, Dimensionality Reduction
 ├── 04_DeepLearning/            # Phase 4: Neural Networks, CNN, Transformers
 ├── 05_MLOps/                   # Phase 5: FastAPI, Docker, Cloud Deployment
 ├── 06_Interview_Prep/          # Phase 6: Scratch Implementations & Theory
 ├── data/                       # Raw & Processed Datasets
-├── .gitignore                  # Keeps your repo clean (ignores ml_env/)
-└── requirements.txt            # Dependencies (numpy, pandas, sklearn, imblearn)
+├── .gitignore                  # Ignores ml_env/, __pycache__, etc.
+└── requirements.txt            # Dependencies (numpy, pandas, sklearn, imblearn, seaborn)
 
 
 ## 🛠️ Tech Stack
