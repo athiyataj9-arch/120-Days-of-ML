@@ -86,12 +86,15 @@ This repository documents my 120-day journey from Python data science foundation
 
 ---
 
+## 📂 Repository Structure
+
+```text
 ├── 01_Foundations/             # Phase 1: Completed ✅
 ├── 02_Supervised/              # Phase 2: Active 🏗️
 │   ├── day21_linear_regression.ipynb
 │   ├── day22_poly_regression.ipynb
 │   ├── day23_regularization.ipynb
-│   ├── day24_sklearn_pipeline.ipynb
+│   ├── day24_sklearn_regression.ipynb
 │   └── day25_metrics.ipynb
 ├── assets/                     # Professional Plots (Textbook Style)
 │   ├── day21_plot.png
@@ -99,9 +102,9 @@ This repository documents my 120-day journey from Python data science foundation
 │   ├── day23_plot.png
 │   ├── day24_plot.png
 │   └── day25_plot.png
-├── data/                       
-├── .gitignore                  
-└── requirements.txt
+├── data/                       # Datasets used in projects
+├── .gitignore                  # Git ignore rules (env, caches)
+└── requirements.txt            # Project dependencies
 
 
 ## 🛠️ Tech Stack
