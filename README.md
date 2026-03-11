@@ -11,74 +11,39 @@ This repository documents my 120-day journey from Python data science foundation
 | **03** | **Unsupervised Learning (Clustering/PCA)** | ⏳ Pending |
 | **04** | **Deep Learning (PyTorch/CNN/NLP)** | ⏳ Pending |
 | **05** | **MLOps & Deployment (FastAPI/Docker)** | ⏳ Pending |
-| **06** | **Interview Prep & System Design** | ⏳ Pending |
 
 ---
 
-## 📈 Daily Progress Log
+## 📈 Daily Progress Log (Phase 2 Continued)
 
-### 📂 Phase 1: Foundations (Days 1–20) ✅
-*Focus: Mastering NumPy, Pandas, Statistics, and Data Cleaning.*
-(Detailed logs for Days 01-20 are archived in the repository history.)
+### **Week 2: Advanced Classification**
+
+**Day 29: Support Vector Machines (SVM)**
+* **File:** `02_Supervised/day29_svm.ipynb`
+* **Reflection:** Mastered the concept of the "Maximum Margin Hyperplane." SVM doesn't just separate data; it finds the widest possible "buffer zone" between classes to ensure the model is robust against new, noisy data.
+
+
+**Day 30: Naive Bayes**
+* **File:** `02_Supervised/day30_naive_bayes.ipynb`
+* **Reflection:** Explored probabilistic classification using Bayes' Theorem. Even though it "naively" assumes features are independent, it is incredibly fast and effective for high-dimensional data like text.
+
+
+[Image of Bayes Theorem formula used in Naive Bayes classification]
+
 
 ---
 
-### 📂 Phase 2: Supervised Learning (Days 21–40) 🏗️
+### **Week 3: Tree-Based Models & Ensembles**
 
-#### **Week 1: Regression (Predicting Numbers)**
+**Day 31: Decision Trees**
+* **File:** `02_Supervised/day31_decision_trees.ipynb`
+* **Reflection:** Visualized the model's logic as a flowchart. Learned how the algorithm uses **Gini Impurity** and **Entropy** to make the best possible splits at each node.
 
-**Day 21: Linear Regression from Scratch**
-* **File:** `02_Supervised/day21_linear_regression.ipynb`
-* **Concepts:** Normal Equation, Slope ($m$), and Intercept ($c$).
-* **Reflection:** Implementing math from scratch helped visualize how the model minimizes the distance between data and the line.
-![Linear Regression](assets/day21_plot.png)
 
-**Day 22: Polynomial Regression**
-* **File:** `02_Supervised/day22_poly_regression.ipynb`
-* **Concepts:** PolynomialFeatures, Quadratic fitting ($y = ax^2 + bx + c$).
-* **Reflection:** Learned that non-linear patterns can be solved by transforming the feature space into higher degrees.
-![Polynomial Regression](assets/day22_plot.png)
+**Day 32: Random Forest (Ensemble Learning)**
+* **File:** `02_Supervised/day32_random_forest.ipynb`
+* **Reflection:** Stepped into **Ensemble Learning**. By training 100 different trees on random subsets of data and letting them "vote," the model significantly reduces overfitting and improves accuracy.
 
-**Day 23: Regularization (Ridge & Lasso)**
-* **File:** `02_Supervised/day23_regularization.ipynb`
-* **Concepts:** L1 (Lasso) vs L2 (Ridge) penalties.
-* **Reflection:** Lasso is a powerful tool for feature selection as it can push unimportant coefficients to exactly zero.
-![Regularization](assets/day23_plot.png)
-
-**Day 24: Scikit-Learn Regression Workflow**
-* **File:** `02_Supervised/day24_sklearn_regression.ipynb`
-* **Concepts:** `train_test_split`, Model Validation, and Predictive Workflows.
-* **Reflection:** Standardizing the workflow prevents "data leakage" and ensures the model is tested on truly unseen data.
-![Pipeline](assets/day24_plot.png)
-
-**Day 25: Regression Evaluation Metrics**
-* **File:** `02_Supervised/day25_metrics.ipynb`
-* **Concepts:** MSE, RMSE, MAE, and $R^2$ Score.
-* **Reflection:** $R^2$ tells us the percentage of variance the model explains, while RMSE gives us the error in original units (e.g., dollars).
-![Metrics Comparison](assets/day25_plot.png)
-
-#### **Week 2: Classification (Predicting Categories)**
-
-**Day 26: Logistic Regression**
-* **File:** `02_Supervised/day26_logistic_regression.ipynb`
-* **Concepts:** Sigmoid Function, Binary Classification, and Probabilities.
-* **Reflection:** Despite the name, this is for classification. It squeezes outputs between 0 and 1 to represent the probability of a class.
-
-![Logistic Curve](assets/day26_plot.png)
-
-**Day 27: Classification Metrics**
-* **File:** `02_Supervised/day27_classification_metrics.ipynb`
-* **Concepts:** Confusion Matrix, Precision, Recall, and F1-Score.
-* **Reflection:** Accuracy isn't everything. In medicine, a False Negative (missing a disease) is much more costly than a False Positive.
-
-![Confusion Matrix](assets/day27_plot.png)
-
-**Day 28: K-Nearest Neighbors (KNN)**
-* **File:** `02_Supervised/day28_knn.ipynb`
-* **Concepts:** Euclidean Distance, $K$-value selection, and Feature Scaling.
-* **Reflection:** KNN is a "lazy learner." Because it relies on distance, **Feature Scaling is mandatory**; otherwise, features with larger units will dominate the prediction.
-
-![KNN Plot](assets/day28_plot.png)
 
 ---
 
@@ -88,19 +53,18 @@ This repository documents my 120-day journey from Python data science foundation
 ├── 01_Foundations/             # Phase 1: Completed ✅
 ├── 02_Supervised/              # Phase 2: Active 🏗️
 │   ├── day21_linear_regression.ipynb
-│   ├── day22_poly_regression.ipynb
-│   ├── day23_regularization.ipynb
-│   ├── day24_sklearn_regression.ipynb
-│   ├── day25_metrics.ipynb
-│   ├── day26_logistic_regression.ipynb
-│   ├── day27_classification_metrics.ipynb
-│   └── day28_knn.ipynb
-├── assets/                     # Professional Plots (Textbook Style)
+│   ├── ...
+│   ├── day28_knn.ipynb
+│   ├── day29_svm.ipynb
+│   ├── day30_naive_bayes.ipynb
+│   ├── day31_decision_trees.ipynb
+│   └── day32_random_forest.ipynb
+├── assets/                     # Professional Plots
 │   ├── day21_plot.png
 │   ├── ...
-│   └── day28_plot.png
-├── data/                       # Datasets used in projects
-├── .gitignore                  # Git ignore rules
+│   ├── day29_plot.png
+│   └── day31_plot.png
+├── data/                       # Datasets
 └── requirements.txt            # Project dependencies
 
 
