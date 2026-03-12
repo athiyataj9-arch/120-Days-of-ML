@@ -17,33 +17,34 @@ This repository documents my 120-day journey from Python data science foundation
 ## 📈 Daily Progress Log (Phase 2 Continued)
 
 ### **Week 2: Advanced Classification**
-
-**Day 29: Support Vector Machines (SVM)**
-* **File:** `02_Supervised/day29_svm.ipynb`
-* **Reflection:** Mastered the concept of the "Maximum Margin Hyperplane." SVM doesn't just separate data; it finds the widest possible "buffer zone" between classes to ensure the model is robust against new, noisy data.
-
-
-**Day 30: Naive Bayes**
-* **File:** `02_Supervised/day30_naive_bayes.ipynb`
-* **Reflection:** Explored probabilistic classification using Bayes' Theorem. Even though it "naively" assumes features are independent, it is incredibly fast and effective for high-dimensional data like text.
-
-
-[Image of Bayes Theorem formula used in Naive Bayes classification]
-
-
----
+* **Day 29:** Support Vector Machines (SVM) - Maximizing the margin between classes.
+* **Day 30:** Naive Bayes - Probabilistic classification using Bayes' Theorem.
 
 ### **Week 3: Tree-Based Models & Ensembles**
+* **Day 31:** Decision Trees - Logic-based splitting using Gini Impurity.
+* **Day 32:** Random Forest - Bagging ensemble to reduce variance.
 
-**Day 31: Decision Trees**
-* **File:** `02_Supervised/day31_decision_trees.ipynb`
-* **Reflection:** Visualized the model's logic as a flowchart. Learned how the algorithm uses **Gini Impurity** and **Entropy** to make the best possible splits at each node.
+### **Week 4: Boosting & Model Validation**
+
+**Day 33: AdaBoost (Adaptive Boosting)**
+* **File:** `02_Supervised/day33_adaboost.ipynb`
+* **Reflection:** Learned how models can be built sequentially. AdaBoost focuses on the "hard" cases by increasing the weights of misclassified points from the previous round.
 
 
-**Day 32: Random Forest (Ensemble Learning)**
-* **File:** `02_Supervised/day32_random_forest.ipynb`
-* **Reflection:** Stepped into **Ensemble Learning**. By training 100 different trees on random subsets of data and letting them "vote," the model significantly reduces overfitting and improves accuracy.
+**Day 34: Gradient Boosting (GBM)**
+* **File:** `02_Supervised/day34_gbm.ipynb`
+* **Reflection:** Understood how Gradient Descent is applied to ensembles. Instead of weights, GBM trains new trees to predict the *residuals* (errors) of the previous trees.
 
+
+**Day 35: XGBoost (Extreme Gradient Boosting)**
+* **File:** `02_Supervised/day35_xgboost.ipynb`
+* **Reflection:** Implemented the industry standard for tabular data. XGBoost is faster and more robust due to its built-in regularization and efficient handling of sparse data.
+
+**Day 36: K-Fold Cross-Validation**
+* **File:** `02_Supervised/day36_cross_validation.ipynb`
+* **Reflection:** Moved beyond the simple train-test split. By testing the model on 5 different folds, I can now mathematically prove the stability and reliability of my classifiers.
+
+![CV Plot](assets/day36_plot.png)
 
 ---
 
@@ -52,21 +53,20 @@ This repository documents my 120-day journey from Python data science foundation
 ```text
 ├── 01_Foundations/             # Phase 1: Completed ✅
 ├── 02_Supervised/              # Phase 2: Active 🏗️
-│   ├── day21_linear_regression.ipynb
 │   ├── ...
-│   ├── day28_knn.ipynb
-│   ├── day29_svm.ipynb
-│   ├── day30_naive_bayes.ipynb
-│   ├── day31_decision_trees.ipynb
-│   └── day32_random_forest.ipynb
+│   ├── day32_random_forest.ipynb
+│   ├── day33_adaboost.ipynb
+│   ├── day34_gbm.ipynb
+│   ├── day35_xgboost.ipynb
+│   └── day36_cross_validation.ipynb
 ├── assets/                     # Professional Plots
 │   ├── day21_plot.png
 │   ├── ...
 │   ├── day29_plot.png
-│   └── day31_plot.png
-├── data/                       # Datasets
+│   └── day36_plot.png
+├── data/                       # Datasets used in projects
+├── .gitignore                  # Git ignore rules
 └── requirements.txt            # Project dependencies
-
 
 ## 🛠️ Tech Stack
 * **Language:** Python 3.10+
