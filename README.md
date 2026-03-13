@@ -7,44 +7,31 @@ This repository documents my 120-day journey from Python data science foundation
 | Phase | Focus | Status |
 | :--- | :--- | :--- |
 | **01** | **Foundations (Math, Stats & Preprocessing)** | ✅ **Completed** |
-| **02** | **Supervised Learning (Regression & Classification)** | 🏗️ **Active** |
-| **03** | **Unsupervised Learning (Clustering/PCA)** | ⏳ Pending |
+| **02** | **Supervised Learning (Regression & Classification)** | ✅ **Completed** |
+| **03** | **Unsupervised Learning (Clustering/PCA)** | 🏗️ **Active** |
 | **04** | **Deep Learning (PyTorch/CNN/NLP)** | ⏳ Pending |
 | **05** | **MLOps & Deployment (FastAPI/Docker)** | ⏳ Pending |
 
 ---
 
-## 📈 Daily Progress Log (Phase 2 Continued)
+## 📈 Daily Progress Log (Phase 2: Conclusion)
 
-### **Week 2: Advanced Classification**
-* **Day 29:** Support Vector Machines (SVM) - Maximizing the margin between classes.
-* **Day 30:** Naive Bayes - Probabilistic classification using Bayes' Theorem.
+### **Week 5: Model Optimization & Handling Real-World Data**
 
-### **Week 3: Tree-Based Models & Ensembles**
-* **Day 31:** Decision Trees - Logic-based splitting using Gini Impurity.
-* **Day 32:** Random Forest - Bagging ensemble to reduce variance.
-
-### **Week 4: Boosting & Model Validation**
-
-**Day 33: AdaBoost (Adaptive Boosting)**
-* **File:** `02_Supervised/day33_adaboost.ipynb`
-* **Reflection:** Learned how models can be built sequentially. AdaBoost focuses on the "hard" cases by increasing the weights of misclassified points from the previous round.
+**Day 37-38: Hyperparameter Tuning (Grid vs. Random Search)**
+* **File:** `02_Supervised/day37_grid_search.ipynb` & `day38_random_search.ipynb`
+* **Reflection:** Learned that "default" parameters are rarely the best. `GridSearchCV` is great for small sets, but `RandomizedSearchCV` is the industry secret for tuning large, complex models quickly without sacrificing much accuracy.
 
 
-**Day 34: Gradient Boosting (GBM)**
-* **File:** `02_Supervised/day34_gbm.ipynb`
-* **Reflection:** Understood how Gradient Descent is applied to ensembles. Instead of weights, GBM trains new trees to predict the *residuals* (errors) of the previous trees.
+**Day 39: Handling Imbalanced Data (SMOTE)**
+* **File:** `02_Supervised/day39_smote.ipynb`
+* **Reflection:** Solved the "Accuracy Paradox." In datasets where 99% of cases are negative (like fraud), a model can be 99% accurate by doing nothing. I used SMOTE to create synthetic minority samples, forcing the model to actually learn the rare cases.
 
 
-**Day 35: XGBoost (Extreme Gradient Boosting)**
-* **File:** `02_Supervised/day35_xgboost.ipynb`
-* **Reflection:** Implemented the industry standard for tabular data. XGBoost is faster and more robust due to its built-in regularization and efficient handling of sparse data.
+**Day 40: Phase 2 Capstone Project**
+* **File:** `02_Supervised/day40_capstone.ipynb`
+* **Reflection:** Brought it all together. Built an end-to-end pipeline that includes Feature Scaling, Class Balancing, and a Tuned XGBoost model. **Phase 2 Complete!**
 
-**Day 36: K-Fold Cross-Validation**
-* **File:** `02_Supervised/day36_cross_validation.ipynb`
-* **Reflection:** Moved beyond the simple train-test split. By testing the model on 5 different folds, I can now mathematically prove the stability and reliability of my classifiers.
-
-![CV Plot](assets/day36_plot.png)
 
 ---
 
@@ -52,20 +39,19 @@ This repository documents my 120-day journey from Python data science foundation
 
 ```text
 ├── 01_Foundations/             # Phase 1: Completed ✅
-├── 02_Supervised/              # Phase 2: Active 🏗️
+├── 02_Supervised/              # Phase 2: Completed ✅
+│   ├── day21_30_basics.ipynb
 │   ├── ...
-│   ├── day32_random_forest.ipynb
-│   ├── day33_adaboost.ipynb
-│   ├── day34_gbm.ipynb
-│   ├── day35_xgboost.ipynb
-│   └── day36_cross_validation.ipynb
-├── assets/                     # Professional Plots
+│   ├── day37_grid_search.ipynb
+│   ├── day38_random_search.ipynb
+│   ├── day39_smote.ipynb
+│   └── day40_capstone.ipynb
+├── 03_Unsupervised/            # Phase 3: Starting 🏗️
+├── assets/                     # Visual Evidence
 │   ├── day21_plot.png
 │   ├── ...
-│   ├── day29_plot.png
 │   └── day36_plot.png
-├── data/                       # Datasets used in projects
-├── .gitignore                  # Git ignore rules
+├── data/                       # Datasets
 └── requirements.txt            # Project dependencies
 
 ## 🛠️ Tech Stack
