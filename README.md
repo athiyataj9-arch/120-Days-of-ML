@@ -14,23 +14,28 @@ This repository documents my 120-day journey from Python data science foundation
 
 ---
 
-## 📈 Daily Progress Log (Phase 2: Conclusion)
+## 📈 Daily Progress Log (Phase 3: Unsupervised Learning)
 
-### **Week 5: Model Optimization & Handling Real-World Data**
+### **Week 1: Pattern Discovery through Clustering**
 
-**Day 37-38: Hyperparameter Tuning (Grid vs. Random Search)**
-* **File:** `02_Supervised/day37_grid_search.ipynb` & `day38_random_search.ipynb`
-* **Reflection:** Learned that "default" parameters are rarely the best. `GridSearchCV` is great for small sets, but `RandomizedSearchCV` is the industry secret for tuning large, complex models quickly without sacrificing much accuracy.
-
-
-**Day 39: Handling Imbalanced Data (SMOTE)**
-* **File:** `02_Supervised/day39_smote.ipynb`
-* **Reflection:** Solved the "Accuracy Paradox." In datasets where 99% of cases are negative (like fraud), a model can be 99% accurate by doing nothing. I used SMOTE to create synthetic minority samples, forcing the model to actually learn the rare cases.
+**Day 41: K-Means Clustering**
+* **File:** `03_Unsupervised/01_Clustering/day41_kmeans.ipynb`
+* **Reflection:** Started Unsupervised Learning by grouping data without labels. K-Means uses centroids to find the "center" of data clusters. It's fast but requires pre-defining the number of groups.
 
 
-**Day 40: Phase 2 Capstone Project**
-* **File:** `02_Supervised/day40_capstone.ipynb`
-* **Reflection:** Brought it all together. Built an end-to-end pipeline that includes Feature Scaling, Class Balancing, and a Tuned XGBoost model. **Phase 2 Complete!**
+**Day 42: The Elbow Method**
+* **File:** `03_Unsupervised/01_Clustering/day42_elbow_method.ipynb`
+* **Reflection:** Learned how to mathematically find the optimal number of clusters ($K$). By plotting the Within-Cluster Sum of Squares (WCSS), I can find the "elbow" where adding more clusters provides diminishing returns.
+
+
+**Day 43: Hierarchical Clustering & Dendrograms**
+* **File:** `03_Unsupervised/01_Clustering/day43_hierarchical.ipynb`
+* **Reflection:** Explored a "bottom-up" approach to clustering. Unlike K-Means, hierarchical clustering creates a tree-like structure (Dendrogram) that allows us to see how every data point relates to others before deciding on the final group count.
+
+
+**Day 44: DBSCAN (Density-Based Clustering)**
+* **File:** `03_Unsupervised/01_Clustering/day44_dbscan.ipynb`
+* **Reflection:** Discovered how to handle non-spherical data (like moon shapes). DBSCAN groups points based on how "packed" they are. Bonus: it automatically identifies "noise" points that don't belong to any cluster.
 
 
 ---
@@ -40,17 +45,19 @@ This repository documents my 120-day journey from Python data science foundation
 ```text
 ├── 01_Foundations/             # Phase 1: Completed ✅
 ├── 02_Supervised/              # Phase 2: Completed ✅
-│   ├── day21_30_basics.ipynb
-│   ├── ...
-│   ├── day37_grid_search.ipynb
-│   ├── day38_random_search.ipynb
-│   ├── day39_smote.ipynb
-│   └── day40_capstone.ipynb
-├── 03_Unsupervised/            # Phase 3: Starting 🏗️
-├── assets/                     # Visual Evidence
+├── 03_Unsupervised/            # Phase 3: Active 🏗️
+│   ├── 01_Clustering/          # Grouping similar data
+│   │   ├── day41_kmeans.ipynb
+│   │   ├── day42_elbow_method.ipynb
+│   │   ├── day43_hierarchical.ipynb
+│   │   └── day44_dbscan.ipynb
+│   ├── 02_Dimensionality/      # (Coming Soon)
+│   └── 03_Association/         # (Coming Soon)
+├── assets/                     # Professional Plots
 │   ├── day21_plot.png
 │   ├── ...
-│   └── day36_plot.png
+│   ├── day41_plot.png
+│   └── day44_plot.png
 ├── data/                       # Datasets
 └── requirements.txt            # Project dependencies
 
