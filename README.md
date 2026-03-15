@@ -1,42 +1,39 @@
 # 120 Days of Machine Learning: From Foundations to MLOps 🚀
 
-This repository documents my 120-day journey from Python data science foundations to production-grade Machine Learning Engineering.
+This repository documents my 120-day journey of mastering Machine Learning, from data preprocessing to deploying production-grade models.
 
-## 🗺️ The Roadmap
+## 🗺️ Progress Roadmap
 
 | Phase | Focus | Status |
 | :--- | :--- | :--- |
 | **01** | **Foundations (Math, Stats & Preprocessing)** | ✅ **Completed** |
 | **02** | **Supervised Learning (Regression & Classification)** | ✅ **Completed** |
-| **03** | **Unsupervised Learning (Clustering/PCA)** | 🏗️ **Active** |
-| **04** | **Deep Learning (PyTorch/CNN/NLP)** | ⏳ Pending |
-| **05** | **MLOps & Deployment (FastAPI/Docker)** | ⏳ Pending |
+| **03** | **Unsupervised Learning (Clustering & Rules)** | 🏗️ **Active (Day 49/120)** |
 
 ---
 
-## 📈 Daily Progress Log (Phase 3: Unsupervised Learning)
+## 📈 Phase 3 Log: Unsupervised Learning
 
-### **Week 1: Pattern Discovery through Clustering**
+### **Week 1: Clustering Fundamentals**
+* **Day 41-42:** Mastered **K-Means Clustering** and the **Elbow Method** to determine the optimal number of clusters ($K$) by analyzing WCSS.
+* **Day 43-44:** Explored **Hierarchical Clustering** with Dendrograms and **DBSCAN** for density-based grouping to handle non-spherical data shapes.
 
-**Day 41: K-Means Clustering**
-* **File:** `03_Unsupervised/01_Clustering/day41_kmeans.ipynb`
-* **Reflection:** Started Unsupervised Learning by grouping data without labels. K-Means uses centroids to find the "center" of data clusters. It's fast but requires pre-defining the number of groups.
+### **Week 2: Dimensionality & Association Rules**
+
+**Day 45-46: Principal Component Analysis (PCA)**
+* **Reflection:** Learned to reduce feature dimensions while retaining maximum variance. Used Scree Plots to visualize how many components are needed to represent the data's "soul."
+![PCA Variance](assets/day46_plot.png)
+
+**Day 47: t-SNE Visualization**
+* **Reflection:** Implemented t-SNE for non-linear dimensionality reduction. It proved superior to PCA for visualizing high-dimensional clusters like handwritten digits in 2D space.
+![t-SNE Plot](assets/day47_plot.png)
+
+**Day 48: Apriori Algorithm (Market Basket Analysis)**
+* **Reflection:** Transitioned into Association Rule Mining. Learned to calculate **Support** and **Confidence** to find hidden relationships between products in transaction data.
 
 
-**Day 42: The Elbow Method**
-* **File:** `03_Unsupervised/01_Clustering/day42_elbow_method.ipynb`
-* **Reflection:** Learned how to mathematically find the optimal number of clusters ($K$). By plotting the Within-Cluster Sum of Squares (WCSS), I can find the "elbow" where adding more clusters provides diminishing returns.
-
-
-**Day 43: Hierarchical Clustering & Dendrograms**
-* **File:** `03_Unsupervised/01_Clustering/day43_hierarchical.ipynb`
-* **Reflection:** Explored a "bottom-up" approach to clustering. Unlike K-Means, hierarchical clustering creates a tree-like structure (Dendrogram) that allows us to see how every data point relates to others before deciding on the final group count.
-
-
-**Day 44: DBSCAN (Density-Based Clustering)**
-* **File:** `03_Unsupervised/01_Clustering/day44_dbscan.ipynb`
-* **Reflection:** Discovered how to handle non-spherical data (like moon shapes). DBSCAN groups points based on how "packed" they are. Bonus: it automatically identifies "noise" points that don't belong to any cluster.
-
+**Day 49: ECLAT Algorithm**
+* **Reflection:** Implemented a vertical approach to frequent itemset mining. Unlike Apriori, ECLAT focuses purely on **Support**, making it a faster and simpler tool for popularity discovery.
 
 ---
 
@@ -46,20 +43,11 @@ This repository documents my 120-day journey from Python data science foundation
 ├── 01_Foundations/             # Phase 1: Completed ✅
 ├── 02_Supervised/              # Phase 2: Completed ✅
 ├── 03_Unsupervised/            # Phase 3: Active 🏗️
-│   ├── 01_Clustering/          # Grouping similar data
-│   │   ├── day41_kmeans.ipynb
-│   │   ├── day42_elbow_method.ipynb
-│   │   ├── day43_hierarchical.ipynb
-│   │   └── day44_dbscan.ipynb
-│   ├── 02_Dimensionality/      # (Coming Soon)
-│   └── 03_Association/         # (Coming Soon)
-├── assets/                     # Professional Plots
-│   ├── day21_plot.png
-│   ├── ...
-│   ├── day41_plot.png
-│   └── day44_plot.png
-├── data/                       # Datasets
-└── requirements.txt            # Project dependencies
+│   ├── 01_Clustering/          # Days 41-44
+│   ├── 02_Dimensionality/      # Days 45-47
+│   └── 03_Association/         # Days 48-49 (Current)
+├── assets/                     # Professional Plots & Visuals
+└── requirements.txt            # Project dependencies (mlxtend, sklearn, etc.)
 
 ## 🛠️ Tech Stack
 * **Language:** Python 3.10+
