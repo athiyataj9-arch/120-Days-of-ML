@@ -8,31 +8,41 @@ This repository documents my 120-day journey of mastering Machine Learning, from
 | :--- | :--- | :--- |
 | **01** | **Foundations (Math, Stats & Preprocessing)** | ✅ **Completed** |
 | **02** | **Supervised Learning (Regression & Classification)** | ✅ **Completed** |
-| **03** | **Unsupervised Learning (Clustering & Rules)** | 🏗️ **Active (Day 54/120)** |
+| **03** | **Unsupervised Learning (Clustering & Rules)** | ✅ **Completed** |
+| **04** | **Deep Learning (Neural Networks, CV & NLP)** | 🏗️ **Active (Day 58/120)** |
 
 ---
 
-## 📈 Phase 3 Log: Unsupervised Learning
+## 📈 Phase 3 Log: Unsupervised Learning (Finalized)
 
-### **Clustering & Dimensionality**
-* **Day 41-44:** Explored **K-Means**, **Hierarchical**, and **DBSCAN**.
-* **Day 45-47:** Mastered **PCA** and **t-SNE** for high-dimensional data visualization.
-* **Day 48-49:** Implemented **Apriori** and **ECLAT** for Market Basket Analysis.
+### **Advanced Applications**
+* **Day 50:** **Customer Segmentation Capstone** - Used PCA + K-Means to identify 4 distinct user personas.
+* **Day 51-52:** **Anomaly Detection** - Implemented Isolation Forest and LOF for fraud/outlier detection.
+* **Day 53-55:** **Recommendation Engines** - Built a similarity-based engine. 
 
-### **Advanced Unsupervised Applications**
+**Highlight: User Similarity Heatmap (Day 55)**
+Using Cosine Similarity to find "taste-twins" among users.
+![User Similarity Heatmap](assets/day55_plot.png)
 
-**Day 50: Mid-Phase Capstone (Customer Segmentation)**
-* **Reflection:** Combined PCA and K-Means to segment 500 customers into distinct behavioral personas. Reducing dimensions before clustering created much sharper, more actionable segments.
-![Customer Segments](assets/day50_plot.png)
+---
 
-**Day 51-52: Anomaly & Fraud Detection**
-* **Isolation Forest:** Learned to isolate anomalies by randomly partitioning data—outliers are easier to isolate (fewer splits).
-* **Local Outlier Factor (LOF):** Implemented density-based detection to find points that are "lonely" relative to their local neighborhood.
-![LOF Anomaly Detection](assets/day52_plot.png)
+## 🧠 Phase 4 Log: Deep Learning Foundations
 
-**Day 53-54: Recommendation Systems**
-* **Content-Based Filtering:** Built a system to recommend items based on feature similarity (tags/genres) using **Cosine Similarity**.
-* **Collaborative Filtering:** Explored user-user similarity by calculating correlation between rating patterns ("Users like you also liked...").
+Starting the journey into Neural Networks. Moving from simple math neurons to multi-layer architectures.
+
+### **Foundations**
+* **Day 56: The Perceptron**
+  - Built the "Atom" of AI. Learned how weights and biases form a simple decision boundary.
+  ![Perceptron Plot](assets/day56_plot.png)
+
+* **Day 57: First Neural Network (Keras)**
+  - Developed a Sequential model in TensorFlow to solve the XOR logic problem. 
+  - *Keywords: Layers, Neurons, Loss Functions, Optimizers.*
+
+* **Day 58: Activation Functions**
+  - Visualized why non-linearity is essential for deep learning.
+  - Compared **ReLU** (standard for hidden layers) vs. **Sigmoid** (output probability).
+  ![Activation Functions](assets/day58_activations.png)
 
 ---
 
@@ -40,15 +50,15 @@ This repository documents my 120-day journey of mastering Machine Learning, from
 
 ```text
 ├── 03_Unsupervised/
-│   ├── 01_Clustering/          # Days 41-44
-│   ├── 02_Dimensionality/      # Days 45-47
-│   ├── 03_Association/         # Days 48-49
-│   ├── 04_Projects/            # Day 50 (Segmentation Project)
-│   ├── 05_Anomalies/           # Days 51-52 (Outlier Detection)
-│   └── 06_Recommendations/     # Days 53-54 (Rec Engines)
-├── assets/                     # Model Visualizations
+│   ├── 04_Projects/            # Day 50 (Segmentation)
+│   ├── 05_Anomalies/           # Days 51-52 (Isolation Forest, LOF)
+│   └── 06_Recommendations/     # Days 53-55 (Rec Engines)
+├── 04_DeepLearning/
+│   └── 01_Foundations/         # Days 56-58 (Perceptron, Keras, Activations)
+├── assets/                     # Model Visualizations & Plots
 └── requirements.txt            # Project dependencies
 
+```
 ## 🛠️ Tech Stack
 * **Language:** Python 3.10+
 * **Libraries:** NumPy, Pandas, Matplotlib, Seaborn, Scipy
