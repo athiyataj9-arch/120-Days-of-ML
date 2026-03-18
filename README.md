@@ -9,54 +9,45 @@ This repository documents my 120-day journey of mastering Machine Learning, from
 | **01** | **Foundations (Math, Stats & Preprocessing)** | ✅ **Completed** |
 | **02** | **Supervised Learning (Regression & Classification)** | ✅ **Completed** |
 | **03** | **Unsupervised Learning (Clustering & Rules)** | ✅ **Completed** |
-| **04** | **Deep Learning (Neural Networks, CV & NLP)** | 🏗️ **Active (Day 58/120)** |
+| **04** | **Deep Learning (Neural Networks, CV & NLP)** | 🏗️ **Active (Day 62/120)** |
 
 ---
 
-## 📈 Phase 3 Log: Unsupervised Learning (Finalized)
+## 📈 Phase 4 Log: Deep Learning Foundations
 
-### **Advanced Applications**
-* **Day 50:** **Customer Segmentation Capstone** - Used PCA + K-Means to identify 4 distinct user personas.
-* **Day 51-52:** **Anomaly Detection** - Implemented Isolation Forest and LOF for fraud/outlier detection.
-* **Day 53-55:** **Recommendation Engines** - Built a similarity-based engine. 
+Moving from simple math neurons to multi-layer architectures and optimization theory.
 
-**Highlight: User Similarity Heatmap (Day 55)**
-Using Cosine Similarity to find "taste-twins" among users.
-![User Similarity Heatmap](assets/day55_plot.png)
+### **The Mechanics of Learning**
+* **Day 59: Gradient Descent**
+  - Implemented the "Step-down" logic to minimize loss functions.
+  - *Key Concept: Learning Rate & Gradients.*
+  ![Gradient Descent](assets/day59_plot.png)
 
----
+* **Day 60: Loss Functions**
+  - Explored **MSE** for regression and **Binary Cross-Entropy** for classification.
+  - Learned how the model "penalizes" itself for being wrong.
 
-## 🧠 Phase 4 Log: Deep Learning Foundations
+* **Day 61: The Bias-Variance Tradeoff**
+  - Visualized why a model that "memorizes" noise (Overfitting) fails on real-world data.
+  ![Overfitting vs Underfitting](assets/day61_plot.png)
 
-Starting the journey into Neural Networks. Moving from simple math neurons to multi-layer architectures.
-
-### **Foundations**
-* **Day 56: The Perceptron**
-  - Built the "Atom" of AI. Learned how weights and biases form a simple decision boundary.
-  ![Perceptron Plot](assets/day56_plot.png)
-
-* **Day 57: First Neural Network (Keras)**
-  - Developed a Sequential model in TensorFlow to solve the XOR logic problem. 
-  - *Keywords: Layers, Neurons, Loss Functions, Optimizers.*
-
-* **Day 58: Activation Functions**
-  - Visualized why non-linearity is essential for deep learning.
-  - Compared **ReLU** (standard for hidden layers) vs. **Sigmoid** (output probability).
-  ![Activation Functions](assets/day58_activations.png)
+* **Day 62: Model Discipline (Regularization)**
+  - Applied **Dropout** to randomly deactivate neurons, forcing the network to learn robust features.
+  - Implemented **L2 Regularization** to prevent weight explosion.
 
 ---
 
 ## 📂 Repository Structure
 
 ```text
-├── 03_Unsupervised/
-│   ├── 04_Projects/            # Day 50 (Segmentation)
-│   ├── 05_Anomalies/           # Days 51-52 (Isolation Forest, LOF)
-│   └── 06_Recommendations/     # Days 53-55 (Rec Engines)
 ├── 04_DeepLearning/
-│   └── 01_Foundations/         # Days 56-58 (Perceptron, Keras, Activations)
-├── assets/                     # Model Visualizations & Plots
-└── requirements.txt            # Project dependencies
+│   └── 01_Foundations/         
+│       ├── day59_gradient_descent.ipynb
+│       ├── day60_loss_functions.ipynb
+│       ├── day61_overfitting.ipynb
+│       └── day62_regularization.ipynb
+├── assets/                     # Visual Gallery of Learning
+└── requirements.txt            # Project dependencies (TensorFlow 2.21.0+)
 
 ```
 ## 🛠️ Tech Stack
