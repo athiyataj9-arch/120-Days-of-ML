@@ -9,32 +9,31 @@ This repository documents my 120-day journey of mastering Machine Learning, from
 | **01** | **Foundations (Math, Stats & Preprocessing)** | ✅ **Completed** |
 | **02** | **Supervised Learning (Regression & Classification)** | ✅ **Completed** |
 | **03** | **Unsupervised Learning (Clustering & Rules)** | ✅ **Completed** |
-| **04** | **Deep Learning (Neural Networks, CV & NLP)** | 🏗️ **Active (Day 70/120)** |
+| **04** | **Deep Learning (Neural Networks, CV & NLP)** | 🏗️ **Active (Day 72/120)** |
 
 ---
 
 ## 📈 Phase 4 Log: Deep Learning
 
 ### **Part 1: Foundations & Scaling (Days 59-66)**
-* **Optimization:** Implemented **Gradient Descent** and **Adam** optimizers.
-* **Regularization:** Applied **Dropout** and **L2** to handle the Bias-Variance tradeoff.
-* **Automation:** Integrated `EarlyStopping` to optimize training time and model weight restoration.
+* **Optimization & Loss:** Implemented Gradient Descent, Adam, and Cross-Entropy logic.
+* **Automation:** Integrated `EarlyStopping` and `ModelCheckpoint` for efficient training.
 
 ### **Part 2: Computer Vision & CNNs (Days 67-70)**
-Teaching machines to extract spatial features and "see" patterns in pixel data.
+* **CNN Mechanics:** Mastered Convolutions, Max Pooling, and Padding.
+* **MNIST Digit Classifier:** Built a custom CNN to recognize handwritten digits.
+* **Data Augmentation:** Used `RandomRotation` and `RandomFlip` to improve model generalization.
 
-* **Day 67-68: Convolutional Mechanics**
-  - Explored **Kernels/Filters** for feature mapping.
-  - Used **Max Pooling** and **Padding** to manage spatial dimensions.
+### **Part 3: Transfer Learning (Days 71-72)**
+Leveraging pre-trained "State-of-the-Art" (SOTA) models to solve complex visual tasks with less data.
 
-* **Day 69: MNIST Digit Classifier**
-  - Built a multi-layer **CNN** that achieves high accuracy in recognizing handwritten digits.
-  - Developed a full pipeline: `Conv2D -> Pooling -> Flatten -> Dense`.
+* **Day 71: VGG16 (The "Deeper" Classic)**
+  - Implemented **VGG16** as a frozen base for feature extraction.
+  - Learned the "Include Top = False" strategy to customize classification heads.
 
-* **Day 70: Data Augmentation**
-  - Implemented real-time image transformation layers (`RandomRotation`, `RandomFlip`, `RandomZoom`).
-  - **Goal:** Improve model generalization by exposing it to synthetic variety.
-  
+* **Day 72: ResNet50 (Skip Connections)**
+  - Explored **Residual Learning** and why "Skip Connections" prevent vanishing gradients.
+  - Compared ResNet's efficiency (lower parameters) vs. VGG16's simplicity.
 
 ---
 
@@ -42,14 +41,15 @@ Teaching machines to extract spatial features and "see" patterns in pixel data.
 
 ```text
 ├── 04_DeepLearning/
-│   ├── 01_Foundations/         # Tabular Deep Learning & Optimization
-│   │   ├── ...
-│   │   └── day66_capstone.ipynb
+│   ├── 01_Foundations/         # Tabular Deep Learning
+│   │   └── ...
 │   └── 02_ComputerVision/      # Image Processing & CNNs
 │       ├── day67_convolutions.ipynb
 │       ├── day68_pooling_padding.ipynb
 │       ├── day69_mnist_cnn.ipynb
-│       └── day70_augmentation.ipynb
+│       ├── day70_augmentation.ipynb
+│       ├── day71_vgg16_transfer.ipynb
+│       └── day72_resnet_residuals.ipynb
 ├── assets/                     # Visual Gallery of Learning
 └── requirements.txt            # Project dependencies (Tensorflow 2.21.0+)
 ```
