@@ -9,39 +9,32 @@ This repository documents my 120-day journey of mastering Machine Learning, from
 | **01** | **Foundations (Math, Stats & Preprocessing)** | ✅ **Completed** |
 | **02** | **Supervised Learning (Regression & Classification)** | ✅ **Completed** |
 | **03** | **Unsupervised Learning (Clustering & Rules)** | ✅ **Completed** |
-| **04** | **Deep Learning (Neural Networks, CV & NLP)** | 🏗️ **Active (Day 68/120)** |
+| **04** | **Deep Learning (Neural Networks, CV & NLP)** | 🏗️ **Active (Day 70/120)** |
 
 ---
 
 ## 📈 Phase 4 Log: Deep Learning
 
-### **Part 1: Foundations & Scaling**
-Moving from simple math neurons to multi-layer architectures and advanced optimization theory.
+### **Part 1: Foundations & Scaling (Days 59-66)**
+* **Optimization:** Implemented **Gradient Descent** and **Adam** optimizers.
+* **Regularization:** Applied **Dropout** and **L2** to handle the Bias-Variance tradeoff.
+* **Automation:** Integrated `EarlyStopping` to optimize training time and model weight restoration.
 
-* **Day 59-60: Optimization & Loss**
-  - Implemented **Gradient Descent** and explored **MSE vs. Binary Cross-Entropy**.
-  ![Gradient Descent](assets/day59_plot.png)
+### **Part 2: Computer Vision & CNNs (Days 67-70)**
+Teaching machines to extract spatial features and "see" patterns in pixel data.
 
-* **Day 61-62: Regularization**
-  - Tackled the **Bias-Variance Tradeoff** and implemented **Dropout** and **L2** to stop overfitting.
-  ![Overfitting vs Underfitting](assets/day61_plot.png)
+* **Day 67-68: Convolutional Mechanics**
+  - Explored **Kernels/Filters** for feature mapping.
+  - Used **Max Pooling** and **Padding** to manage spatial dimensions.
 
-* **Day 63-64: Architecture & Tuning**
-  - Built multi-layer **DNNs** and experimented with **Learning Rates** and **Batch Sizes**.
+* **Day 69: MNIST Digit Classifier**
+  - Built a multi-layer **CNN** that achieves high accuracy in recognizing handwritten digits.
+  - Developed a full pipeline: `Conv2D -> Pooling -> Flatten -> Dense`.
 
-* **Day 65-66: Automation & Capstone**
-  - Integrated `EarlyStopping` callbacks and finalized the foundations phase with an end-to-end classification pipeline.
-  ![Early Stopping](assets/day65_earlystopping.png)
-
-### **Part 2: Computer Vision (CNNs)**
-Transitioning from tabular data to spatial feature extraction in images.
-
-* **Day 67: Convolutional Layers (The "Eyes")**
-  - Implemented `Conv2D` layers using sliding kernels to detect edges, textures, and patterns.
-  - *Key Concept: Automatic Feature Extraction.*
-
-* **Day 68: Spatial Reduction (Pooling & Padding)**
-  - Applied **Max Pooling** to downsample feature maps and **Padding** to maintain spatial dimensions at image borders.
+* **Day 70: Data Augmentation**
+  - Implemented real-time image transformation layers (`RandomRotation`, `RandomFlip`, `RandomZoom`).
+  - **Goal:** Improve model generalization by exposing it to synthetic variety.
+  
 
 ---
 
@@ -49,13 +42,14 @@ Transitioning from tabular data to spatial feature extraction in images.
 
 ```text
 ├── 04_DeepLearning/
-│   ├── 01_Foundations/         # Tabular Deep Learning
-│   │   ├── day59_gradient_descent.ipynb
+│   ├── 01_Foundations/         # Tabular Deep Learning & Optimization
 │   │   ├── ...
 │   │   └── day66_capstone.ipynb
 │   └── 02_ComputerVision/      # Image Processing & CNNs
 │       ├── day67_convolutions.ipynb
-│       └── day68_pooling_padding.ipynb
+│       ├── day68_pooling_padding.ipynb
+│       ├── day69_mnist_cnn.ipynb
+│       └── day70_augmentation.ipynb
 ├── assets/                     # Visual Gallery of Learning
 └── requirements.txt            # Project dependencies (Tensorflow 2.21.0+)
 ```
