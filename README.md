@@ -9,31 +9,28 @@ This repository documents my 120-day journey of mastering Machine Learning, from
 | **01** | **Foundations (Math, Stats & Preprocessing)** | ✅ **Completed** |
 | **02** | **Supervised Learning (Regression & Classification)** | ✅ **Completed** |
 | **03** | **Unsupervised Learning (Clustering & Rules)** | ✅ **Completed** |
-| **04** | **Deep Learning (Neural Networks, CV & NLP)** | 🏗️ **Active (Day 72/120)** |
+| **04** | **Deep Learning (Neural Networks, CV & GenAI)** | ✅ **Completed (Day 80/120)** |
+| **05** | **Natural Language Processing (NLP & Transformers)** | 🏗️ **Upcoming (Day 81)** |
 
 ---
 
-## 📈 Phase 4 Log: Deep Learning
+## 📈 Phase 4 Log: Deep Learning & Computer Vision
 
-### **Part 1: Foundations & Scaling (Days 59-66)**
-* **Optimization & Loss:** Implemented Gradient Descent, Adam, and Cross-Entropy logic.
-* **Automation:** Integrated `EarlyStopping` and `ModelCheckpoint` for efficient training.
+### **Part 1: Foundations & CNNs (Days 59-70)**
+* **Optimization:** Implemented Adam optimizer and Cross-Entropy loss logic.
+* **CNN Mechanics:** Mastered Convolutions, Max Pooling, and Padding from scratch.
+* **Augmentation:** Used `ImageDataGenerator` to improve model robustness and generalization.
 
-### **Part 2: Computer Vision & CNNs (Days 67-70)**
-* **CNN Mechanics:** Mastered Convolutions, Max Pooling, and Padding.
-* **MNIST Digit Classifier:** Built a custom CNN to recognize handwritten digits.
-* **Data Augmentation:** Used `RandomRotation` and `RandomFlip` to improve model generalization.
+### **Part 2: Transfer Learning & Detection (Days 71-76)**
+* **SOTA Models:** Leveraged **VGG16** and **ResNet50** (Skip Connections) for feature extraction.
+* **YOLOv8 Detection:** Implemented real-time Object Detection for multi-class tasks (Bus, Person).
+* **Instance Segmentation:** Achieved pixel-level precision using **YOLOv8-seg** to generate object masks.
 
-### **Part 3: Transfer Learning (Days 71-72)**
-Leveraging pre-trained "State-of-the-Art" (SOTA) models to solve complex visual tasks with less data.
-
-* **Day 71: VGG16 (The "Deeper" Classic)**
-  - Implemented **VGG16** as a frozen base for feature extraction.
-  - Learned the "Include Top = False" strategy to customize classification heads.
-
-* **Day 72: ResNet50 (Skip Connections)**
-  - Explored **Residual Learning** and why "Skip Connections" prevent vanishing gradients.
-  - Compared ResNet's efficiency (lower parameters) vs. VGG16's simplicity.
+### **Part 3: Generative AI & Autoencoders (Days 77-80)**
+* **Autoencoders (AE):** Built an "hourglass" architecture for dimensionality reduction.
+* **Denoising AE:** Developed a Convolutional "Cleaner" to restore grainy or corrupted images.
+* **VAEs:** Implemented the **Reparameterization Trick** to sample from a learned latent space.
+* **GANs:** Orchestrated a competition between a **Generator** and **Discriminator** to create synthetic data.
 
 ---
 
@@ -42,16 +39,17 @@ Leveraging pre-trained "State-of-the-Art" (SOTA) models to solve complex visual 
 ```text
 ├── 04_DeepLearning/
 │   ├── 01_Foundations/         # Tabular Deep Learning
-│   │   └── ...
-│   └── 02_ComputerVision/      # Image Processing & CNNs
-│       ├── day67_convolutions.ipynb
-│       ├── day68_pooling_padding.ipynb
-│       ├── day69_mnist_cnn.ipynb
-│       ├── day70_augmentation.ipynb
-│       ├── day71_vgg16_transfer.ipynb
-│       └── day72_resnet_residuals.ipynb
-├── assets/                     # Visual Gallery of Learning
-└── requirements.txt            # Project dependencies (Tensorflow 2.21.0+)
+│   └── 02_ComputerVision/      # Image Processing & Generative AI
+│       ├── day74_yolo_intro.ipynb
+│       ├── day75_object_detection.ipynb
+│       ├── day76_segmentation.ipynb
+│       ├── day77_autoencoders.ipynb
+│       ├── day78_denoising.ipynb
+│       ├── day79_vae.ipynb
+│       └── day80_gans.ipynb
+├── 05_NLP/                     # Upcoming Phase: Language Modeling
+├── assets/                     # Visual Gallery (YOLO results, AE reconstructions)
+└── requirements.txt            # Project dependencies (Tensorflow 2.21.0+, Ultralytics)
 ```
 ## 🛠️ Tech Stack
 * **Language:** Python 3.10+
