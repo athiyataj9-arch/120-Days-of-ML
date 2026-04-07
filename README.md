@@ -1,6 +1,6 @@
 # 120 Days of Machine Learning: From Foundations to MLOps 🚀
 
-This repository documents my 120-day journey of mastering Machine Learning, from data preprocessing to deploying production-grade models.
+This repository documents my 120-day journey of mastering Machine Learning, from mathematical foundations to deploying production-grade models.
 
 ## 🗺️ Progress Roadmap
 
@@ -9,47 +9,72 @@ This repository documents my 120-day journey of mastering Machine Learning, from
 | **01** | **Foundations (Math, Stats & Preprocessing)** | ✅ **Completed** |
 | **02** | **Supervised Learning (Regression & Classification)** | ✅ **Completed** |
 | **03** | **Unsupervised Learning (Clustering & Rules)** | ✅ **Completed** |
-| **04** | **Deep Learning (Neural Networks, CV & GenAI)** | ✅ **Completed (Day 80/120)** |
-| **05** | **Natural Language Processing (NLP & Transformers)** | 🏗️ **Upcoming (Day 81)** |
+| **04** | **Deep Learning (Neural Networks, CV & GenAI)** | ✅ **Completed** |
+| **05** | **Natural Language Processing (NLP & Transformers)** | 🏗️ **In Progress (Day 85/120)** |
 
 ---
 
-## 📈 Phase 4 Log: Deep Learning & Computer Vision
+## 📈 Phase 1 Log: Math & Preprocessing (Days 1–20)
 
-### **Part 1: Foundations & CNNs (Days 59-70)**
-* **Optimization:** Implemented Adam optimizer and Cross-Entropy loss logic.
-* **CNN Mechanics:** Mastered Convolutions, Max Pooling, and Padding from scratch.
-* **Augmentation:** Used `ImageDataGenerator` to improve model robustness and generalization.
+* **Mathematics:** Linear Algebra (Matrices/Tensors), Calculus (Gradients), and Probability.
+* **Statistics:** Descriptive stats, Hypothesis testing, P-values, and Correlation analysis.
+* **Preprocessing:** Handling missing values, Outlier detection, and Feature Scaling (Standardization/Normalization).
 
-### **Part 2: Transfer Learning & Detection (Days 71-76)**
-* **SOTA Models:** Leveraged **VGG16** and **ResNet50** (Skip Connections) for feature extraction.
-* **YOLOv8 Detection:** Implemented real-time Object Detection for multi-class tasks (Bus, Person).
-* **Instance Segmentation:** Achieved pixel-level precision using **YOLOv8-seg** to generate object masks.
+---
 
-### **Part 3: Generative AI & Autoencoders (Days 77-80)**
-* **Autoencoders (AE):** Built an "hourglass" architecture for dimensionality reduction.
-* **Denoising AE:** Developed a Convolutional "Cleaner" to restore grainy or corrupted images.
-* **VAEs:** Implemented the **Reparameterization Trick** to sample from a learned latent space.
-* **GANs:** Orchestrated a competition between a **Generator** and **Discriminator** to create synthetic data.
+## 📈 Phase 2 Log: Supervised Learning (Days 21–45)
+
+* **Regression:** Simple/Multiple Linear Regression, Lasso (L1), and Ridge (L2) Regularization.
+* **Classification:** Logistic Regression, K-Nearest Neighbors (**KNN**), and Support Vector Machines (**SVM**).
+* **Ensemble Methods:** Decision Trees, **Random Forest**, and Gradient Boosting (**XGBoost**, LightGBM).
+
+---
+
+## 📈 Phase 3 Log: Unsupervised Learning (Days 46–58)
+
+* **Clustering:** K-Means, Hierarchical Clustering, and DBSCAN for density-based grouping.
+* **Dimensionality Reduction:** Principal Component Analysis (**PCA**) and t-SNE for 2D/3D visualization.
+* **Association:** Apriori Algorithm for market basket analysis and pattern discovery.
+
+---
+
+## 📈 Phase 4 Log: Deep Learning & Computer Vision (Days 59–80)
+
+* **Days 59-65: ANN Foundations:** Multi-Layer Perceptrons, Backpropagation, and Activation Functions (ReLU, Sigmoid).
+* **Days 66-70: CNN Mechanics:** Convolutional layers, Max-Pooling, Dropout, and Batch Normalization.
+* **Days 71-76: SOTA & Detection:** Transfer Learning with **ResNet50** and real-time detection using **YOLOv8**.
+* **Days 77-80: Generative AI:** Denoising **Autoencoders**, Variational Autoencoders (VAEs), and **GANs**.
+
+---
+
+## 📈 Phase 5 Log: NLP & Text Engineering (Days 81–85)
+
+* **Day 81: Tokenization Suite** – Implemented NLTK `word_tokenize` and `TweetTokenizer` for social media data.
+* **Day 82: Normalization** – Comparison of **PorterStemmer** vs. **WordNetLemmatizer** for root-word extraction.
+* **Day 83: Text Cleaning** – Pipeline for removing stopwords and punctuation to reduce feature noise.
+* **Day 84: TF-IDF Vectorization** – Statistical weighting of terms to identify document-specific keywords.
+* **Day 85: Word Embeddings** – Training **Word2Vec** models with Gensim to capture semantic similarities.
 
 ---
 
 ## 📂 Repository Structure
 
 ```text
-├── 04_DeepLearning/
-│   ├── 01_Foundations/         # Tabular Deep Learning
-│   └── 02_ComputerVision/      # Image Processing & Generative AI
-│       ├── day74_yolo_intro.ipynb
-│       ├── day75_object_detection.ipynb
-│       ├── day76_segmentation.ipynb
-│       ├── day77_autoencoders.ipynb
-│       ├── day78_denoising.ipynb
-│       ├── day79_vae.ipynb
-│       └── day80_gans.ipynb
-├── 05_NLP/                     # Upcoming Phase: Language Modeling
-├── assets/                     # Visual Gallery (YOLO results, AE reconstructions)
-└── requirements.txt            # Project dependencies (Tensorflow 2.21.0+, Ultralytics)
+├── 01_Foundations/             # Math, Stats, and EDA (Days 1-20)
+├── 02_Supervised_Learning/      # Regression & Classification (Days 21-45)
+├── 03_Unsupervised_Learning/    # Clustering & PCA (Days 46-58)
+├── 04_DeepLearning/            # CNNs, YOLOv8, and GANs (Days 59-80)
+│   ├── 01_Foundations/
+│   └── 02_ComputerVision/
+├── 05_NLP/                     # Current Focus (Days 81-120)
+│   └── 01_Text_Preprocessing/
+│       ├── day81_tokenization.ipynb
+│       ├── day82_stemming_lemmatization.ipynb
+│       ├── day83_stop_words_cleaning.ipynb
+│       ├── day84_tfidf_vectorizer.ipynb
+│       └── day85_word2vec_embeddings.ipynb
+├── requirements.txt            # Project dependencies
+└── README.md                   # Project documentation
 ```
 ## 🛠️ Tech Stack
 * **Language:** Python 3.10+
