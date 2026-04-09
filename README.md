@@ -10,7 +10,7 @@ This repository documents my 120-day journey of mastering Machine Learning, from
 | **02** | **Supervised Learning (Regression & Classification)** | ✅ **Completed** |
 | **03** | **Unsupervised Learning (Clustering & Rules)** | ✅ **Completed** |
 | **04** | **Deep Learning (Neural Networks, CV & GenAI)** | ✅ **Completed** |
-| **05** | **Natural Language Processing (NLP & Transformers)** | 🏗️ **In Progress (Day 90/120)** |
+| **05** | **Natural Language Processing (NLP & Transformers)** | 🏗️ **In Progress (Day 95/120)** |
 
 ---
 
@@ -43,18 +43,24 @@ This repository documents my 120-day journey of mastering Machine Learning, from
 
 ---
 
-## 📈 Phase 5 Log: NLP & Sequence Models (Days 81–90) 🏗️
+## 📈 Phase 5 Log: NLP & Transformers (Days 81–95) 🏗️
 
 ### **Part 1: Text Preprocessing (Days 81-85)**
-* **Day 81-83:** Mastered Tokenization, Normalization (Stemming/Lemmatization), and Text Cleaning.
-* **Day 84:** Implemented TF-IDF Vectorization for statistical word importance.
-* **Day 85:** Trained Word2Vec embeddings with Gensim to capture semantic relationships.
+* **Day 81-83:** Tokenization, Normalization (Stemming/Lemmatization), and Text Cleaning.
+* **Day 84:** TF-IDF Vectorization for statistical word importance.
+* **Day 85:** Word2Vec embeddings with Gensim for semantic relationships.
 
 ### **Part 2: Sequence Models (Days 86-90)**
-* **Day 86:** Implemented basic **SimpleRNN** architectures in Keras.
-* **Day 87-88:** Explored **LSTMs** and **GRUs** to solve the vanishing gradient problem.
-* **Day 89:** Developed **Bidirectional RNNs** to capture context from both future and past.
-* **Day 90:** Built **Stacked RNN** architectures for hierarchical language learning.
+* **Day 86-88:** Implemented SimpleRNN, LSTM, and GRU architectures.
+* **Day 89:** Developed Bidirectional RNNs for two-way context.
+* **Day 90:** Built Stacked RNN architectures for hierarchical learning.
+
+### **Part 3: Attention & Modern NLP (Days 91-95)**
+* **Day 91:** Encoder-Decoder (Seq2Seq) architecture for Machine Translation.
+* **Day 92:** Integrated Attention Mechanism to solve the context bottleneck.
+* **Day 93:** Implemented Scaled Dot-Product Self-Attention ($Q, K, V$ logic).
+* **Day 94:** Mastered Multi-Head Attention for parallelized context extraction.
+* **Day 95:** Developed Positional Encoding using Sine/Cosine frequencies to inject sequence order.
 
 ---
 
@@ -67,13 +73,13 @@ This repository documents my 120-day journey of mastering Machine Learning, from
 ├── 04_DeepLearning/            # Days 59-80
 ├── 05_NLP/                     # Current Focus (Days 81-120)
 │   ├── 01_Text_Preprocessing/  # Day 81-85
-│   │   └── day85_word2vec_embeddings.ipynb
-│   └── 02_Sequence_Models/     # Day 86-90
-│       ├── day86_rnn_basics.ipynb
-│       ├── day87_lstm_networks.ipynb
-│       ├── day88_gru_networks.ipynb
-│       ├── day89_bidirectional_rnns.ipynb
-│       └── day90_stacked_rnns.ipynb
+│   ├── 02_Sequence_Models/     # Day 86-90
+│   └── 03_Attention_and_Transformers/ # Day 91-120
+│       ├── day91_encoder_decoder.ipynb
+│       ├── day92_attention_mechanism.ipynb
+│       ├── day93_self_attention.ipynb
+│       ├── day94_multi_head_attention.ipynb
+│       └── day95_positional_encoding.ipynb
 ├── requirements.txt            # Project dependencies
 └── README.md                   # Project documentation
 ```
