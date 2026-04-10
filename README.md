@@ -10,7 +10,7 @@ This repository documents my 120-day journey of mastering Machine Learning, from
 | **02** | **Supervised Learning (Regression & Classification)** | ✅ **Completed** |
 | **03** | **Unsupervised Learning (Clustering & Rules)** | ✅ **Completed** |
 | **04** | **Deep Learning (Neural Networks, CV & GenAI)** | ✅ **Completed** |
-| **05** | **Natural Language Processing (NLP & Transformers)** | 🏗️ **In Progress (Day 95/120)** |
+| **05** | **Natural Language Processing (NLP & Transformers)** | ✅ **Completed (Day 100/120)** |
 
 ---
 
@@ -22,7 +22,7 @@ This repository documents my 120-day journey of mastering Machine Learning, from
 ---
 
 ## 📈 Phase 2 Log: Supervised Learning (Days 21–45)
-* **Regression:** Simple/Multiple Linear Regression, Lasso (L1), and Ridge (L2).
+* **Regression:** Simple/Multiple Linear Regression, Lasso (L1), and Ridge (L2) Regularization.
 * **Classification:** Logistic Regression, KNN, and Support Vector Machines (SVM).
 * **Ensemble Methods:** Decision Trees, Random Forest, and Gradient Boosting (XGBoost, LightGBM).
 
@@ -31,7 +31,7 @@ This repository documents my 120-day journey of mastering Machine Learning, from
 ## 📈 Phase 3 Log: Unsupervised Learning (Days 46–58)
 * **Clustering:** K-Means, Hierarchical Clustering, and DBSCAN.
 * **Dimensionality Reduction:** Principal Component Analysis (PCA) and t-SNE.
-* **Association:** Apriori Algorithm for pattern discovery.
+* **Association:** Apriori Algorithm for market basket analysis.
 
 ---
 
@@ -43,10 +43,10 @@ This repository documents my 120-day journey of mastering Machine Learning, from
 
 ---
 
-## 📈 Phase 5 Log: NLP & Transformers (Days 81–95) 🏗️
+## 📈 Phase 5 Log: NLP & Transformers (Days 81–100) ✅
 
 ### **Part 1: Text Preprocessing (Days 81-85)**
-* **Day 81-83:** Tokenization, Normalization (Stemming/Lemmatization), and Text Cleaning.
+* **Day 81-83:** Mastered Tokenization, Normalization (Stemming/Lemmatization), and Text Cleaning.
 * **Day 84:** TF-IDF Vectorization for statistical word importance.
 * **Day 85:** Word2Vec embeddings with Gensim for semantic relationships.
 
@@ -55,12 +55,14 @@ This repository documents my 120-day journey of mastering Machine Learning, from
 * **Day 89:** Developed Bidirectional RNNs for two-way context.
 * **Day 90:** Built Stacked RNN architectures for hierarchical learning.
 
-### **Part 3: Attention & Modern NLP (Days 91-95)**
+### **Part 3: Attention & Modern NLP (Days 91-100)**
 * **Day 91:** Encoder-Decoder (Seq2Seq) architecture for Machine Translation.
 * **Day 92:** Integrated Attention Mechanism to solve the context bottleneck.
-* **Day 93:** Implemented Scaled Dot-Product Self-Attention ($Q, K, V$ logic).
-* **Day 94:** Mastered Multi-Head Attention for parallelized context extraction.
-* **Day 95:** Developed Positional Encoding using Sine/Cosine frequencies to inject sequence order.
+* **Day 93-94:** Implemented Scaled Dot-Product Self-Attention and Multi-Head Attention.
+* **Day 95-96:** Developed Positional Encoding and assembled the full Transformer Block.
+* **Day 97-98:** Explored BERT (Encoder-only) vs. GPT (Decoder-only) architectures.
+* **Day 99:** Utilized Hugging Face Pipelines for Sentiment Analysis, NER, and Summarization.
+* **Day 100:** Fine-tuned `TFBertForSequenceClassification` on custom data—reached 100-day milestone!
 
 ---
 
@@ -71,15 +73,14 @@ This repository documents my 120-day journey of mastering Machine Learning, from
 ├── 02_Supervised_Learning/      # Days 21-45
 ├── 03_Unsupervised_Learning/    # Days 46-58
 ├── 04_DeepLearning/            # Days 59-80
-├── 05_NLP/                     # Current Focus (Days 81-120)
+├── 05_NLP/                     # Days 81-100
 │   ├── 01_Text_Preprocessing/  # Day 81-85
 │   ├── 02_Sequence_Models/     # Day 86-90
-│   └── 03_Attention_and_Transformers/ # Day 91-120
+│   └── 03_Attention_and_Transformers/
 │       ├── day91_encoder_decoder.ipynb
-│       ├── day92_attention_mechanism.ipynb
-│       ├── day93_self_attention.ipynb
-│       ├── day94_multi_head_attention.ipynb
-│       └── day95_positional_encoding.ipynb
+│       ├── ...
+│       ├── day99_hf_pipelines.ipynb
+│       └── day100_bert_finetuning.ipynb
 ├── requirements.txt            # Project dependencies
 └── README.md                   # Project documentation
 ```
